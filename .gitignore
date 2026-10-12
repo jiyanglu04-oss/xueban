@@ -1,0 +1,35 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---- 运行环境（首次启动时自动下载，几百 MB，不进版本库） ----
+runtime/
+
+# ---- 本地数据与状态 ----
+# 这些一旦提交就等于把账号和数据公开出去
+data/*.sqlite3
+data/*.sqlite3-shm
+data/*.sqlite3-wal
+sync/state/
+sync/debug/
+sync/logs/
+sync/sync-data.json
+sync/push_config.json
+weapp/project.private.config.json
+
+# ---- 构建与备份产物 ----
+*.原始备份.*
+*.备份-*.html
+backups/
+output/
+tmp/
+_scratch/
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
